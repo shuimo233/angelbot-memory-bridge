@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "memory-bridge": {
+      "command": "uv",
+      "args": ["run", "--locked", "--project", "${PLUGIN_ROOT}", "angelbot-memory-bridge", "serve"],
+      "cwd": "${PLUGIN_ROOT}"
+    }
+  }
+}

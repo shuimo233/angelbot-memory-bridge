@@ -1,0 +1,15 @@
+{
+  "name": "angelbot-memory-bridge",
+  "version": "0.4.0",
+  "description": "Turn rough software ideas into testable changes using the user's words and source-backed project memory.",
+  "license": "MIT",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "requires_local_executor": true,
+  "interface": {
+    "displayName": "Memory Bridge",
+    "shortDescription": "Shape software requests and recall project decisions",
+    "category": "Developer Tools",
+    "capabilities": ["Shape a coding request", "Recall source-backed records", "Correct and revoke remembered records"]
+  }
+}

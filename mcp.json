@@ -1,0 +1,11 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "memory-bridge": {
+      "type": "stdio",
+      "command": "uv",
+      "args": ["run", "--locked", "--project", "${PLUGIN_ROOT}", "angelbot-memory-bridge", "serve"],
+      "cwd": "${PLUGIN_ROOT}"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "angelbot-memory-bridge"
+version = "0.4.0"
+description = "Evidence-backed, runtime-independent project memory over MCP"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = ["mcp==2.3.0", "uvicorn>=0.35,<1"]
+
+[project.optional-dependencies]
+test = ["pytest>=8.4,<9"]
+
+[project.scripts]
+angelbot-memory-bridge = "angelbot_memory_bridge.__main__:main"
+
+[project.urls]
+Repository = "https://github.com/shuimo233/angelbot-memory-bridge"
+Issues = "https://github.com/shuimo233/angelbot-memory-bridge/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/angelbot_memory_bridge"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
